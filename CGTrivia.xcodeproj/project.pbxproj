@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4316F6F61FA03171007286E4 /* QuestionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4316F6F51FA03171007286E4 /* QuestionData.json */; };
+		4316F6F81FA03B00007286E4 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4316F6F71FA03B00007286E4 /* AnswerButton.swift */; };
 		43D48BF41F9D351B00B63144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D48BF31F9D351B00B63144 /* AppDelegate.swift */; };
 		43D48BF61F9D351B00B63144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D48BF51F9D351B00B63144 /* ViewController.swift */; };
 		43D48BF91F9D351B00B63144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D48BF71F9D351B00B63144 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4316F6F51FA03171007286E4 /* QuestionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionData.json; sourceTree = "<group>"; };
+		4316F6F71FA03B00007286E4 /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		43D48BF01F9D351B00B63144 /* CGTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D48BF31F9D351B00B63144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43D48BF51F9D351B00B63144 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				43D48BF31F9D351B00B63144 /* AppDelegate.swift */,
 				43D48BF51F9D351B00B63144 /* ViewController.swift */,
 				43D48C071F9D35B500B63144 /* Question.swift */,
+				4316F6F71FA03B00007286E4 /* AnswerButton.swift */,
 				43D48C051F9D35A300B63144 /* QuizModel.swift */,
 				4316F6F51FA03171007286E4 /* QuestionData.json */,
 				43D48BF71F9D351B00B63144 /* Main.storyboard */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4316F6F81FA03B00007286E4 /* AnswerButton.swift in Sources */,
 				43D48BF61F9D351B00B63144 /* ViewController.swift in Sources */,
 				43D48C081F9D35B500B63144 /* Question.swift in Sources */,
 				43D48C061F9D35A300B63144 /* QuizModel.swift in Sources */,
@@ -223,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -274,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -289,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRMU5C8C32;
 				INFOPLIST_FILE = CGTrivia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appybuildmore.CGTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,7 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YRMU5C8C32;
 				INFOPLIST_FILE = CGTrivia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appybuildmore.CGTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
