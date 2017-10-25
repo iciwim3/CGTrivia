@@ -50,6 +50,13 @@
     },
     
     {
+        "question":"The first woman promoted to CWO (F&S) was ________ in 1987.",
+        "answers":["Joyce Meyers", "Ellen Terrill", "Suzanne Thibodeaux"],
+        "correctAnswerIndex":2,
+        "category": "USCG Personnel"
+    },
+    
+    {
         "question":"The first Cuban-American to command a Coast Guard Cutter was LT. Jorge Martinez on the CGC Maui (WPB-1304) in 2003.",
         "answers":["True", "False"],
         "correctAnswerIndex":0,
@@ -141,10 +148,24 @@
     },
     
     {
+        "question":"The first woman Coast Guard diver was ________ in 1984.",
+        "answers":["Pamela Jones", "Grace Parmalee", "Linda Moroz"],
+        "correctAnswerIndex":2,
+        "category": "USCG Personnel"
+    },
+    
+    {
         "question":"This cutter was responsible for the first anti-piracy action when it ran a pirate vessel ashore in Chesapeake Bay in 1793.",
         "answers":["Massachusetts", "Virginia", "Diligence"],
         "correctAnswerIndex":2,
         "category": "Timeline 1700's - 1800's"
+    },
+    
+    {
+        "question":"In 1988 ________ became the first African-American female engineer that advanced to E-7.",
+        "answers":["Pamela Autry", "Reese Davis", "Deborah Faust"],
+        "correctAnswerIndex":0,
+        "category": "USCG Personnel"
     },
     
     {
@@ -197,6 +218,13 @@
     },
     
     {
+        "question":"________ became the first OIC of a LEDET when he took command of Group Hatteras LEDET in September, 1988.",
+        "answers":["LT Oscar Wilde", "LT Samuel A. Thomas", "LT John T. Broadway"],
+        "correctAnswerIndex":2,
+        "category": "USCG Personnel"
+    },
+    
+    {
         "question":"The first woman promoted to CWO (COMMS) was Robin Patton in 1989.",
         "answers":["True", "False"],
         "correctAnswerIndex":0,
@@ -236,6 +264,20 @@
         "answers":["True", "False"],
         "correctAnswerIndex":0,
         "category": "Timeline 1700's - 1800's"
+    },
+    
+    {
+        "question":"In 1998, ________ became the first African-American Master Chief Petty Officer of the Coast Guard.",
+        "answers":["Rich Gregory", "Vincent Patton, III", "Mike Green Jr."],
+        "correctAnswerIndex":1,
+        "category": "USCG Personnel"
+    },
+    
+    {
+        "question":"Who was the first active-duty woman to be advanced to chief petty officer ________.",
+        "answers":["PAC Day Boswell, 1982", "PAC Mariska Hargitay, 1977", "SKC Jane Whiteside, 1979"],
+        "correctAnswerIndex":0,
+        "category": "USCG Personnel"
     },
     
     {
