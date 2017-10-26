@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         // Check if there are questions
         if questions.count > 0 {
             
-            currentQuestion = questions[0]
+            currentQuestion = questions[1]
             
             // Display current question
             displayCurrentQuestion()
@@ -62,6 +62,7 @@ class ViewController: UIViewController {
                 
                 // Create answer button
                 let answerButton = AnswerButton()
+                answerButton.tag = index
                 
                 // Create a height constraint for it
                 let heightConstraint = NSLayoutConstraint(item: answerButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)
@@ -71,6 +72,9 @@ class ViewController: UIViewController {
                 answerButton.setAnswerText(answerText: actualCurrentQuestion.answers[index])
                 
                 // TODO: Create and attach a tapgestureRecognizer
+                let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(answerTapped(gestureRecognizer:)))
+                
+                answerButton.addGestureRecognizer(gestureRecognizer)
                 
                 // Place the answer button into the stackview
                 answerStackView.addArrangedSubview(answerButton)
@@ -79,6 +83,25 @@ class ViewController: UIViewController {
             
         }
         
+    }
+    
+    @objc func answerTapped(gestureRecognizer: UITapGestureRecognizer) {
+        
+        // Detect which button was tapped
+        if gestureRecognizer.view as? AnswerButton != nil {
+            
+            // We know that the UIView property is not nil and IS an answerButton object
+            let answerButton = gestureRecognizer.view as! AnswerButton
+            
+            if answerButton.tag == currentQuestion?.correctAnswerIndex {
+                // User got it correct
+                print("Correct!")
+            }
+            else {
+                // User got it wrong
+                print("Wrong!")
+            }
+        }
     }
 
 }
