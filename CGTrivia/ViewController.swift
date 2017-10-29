@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     let model = QuizModel()
     var questions = [Question]()
     
+    var numberCorrect = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -105,6 +107,9 @@ class ViewController: UIViewController {
             if answerButton.tag == currentQuestion?.correctAnswerIndex {
                 // User got it correct
                 resultLabel.text = "Correct!"
+                
+                // Increment counter
+                numberCorrect += 1
             }
             else {
                 // User got it wrong
@@ -112,9 +117,10 @@ class ViewController: UIViewController {
             }
             
             // Set the feedback label
-            feedbackLabel.text = currentQuestion?.category
+            feedbackLabel.text = currentQuestion?.feedback
             
-            // TODO: Set the button text
+            // Set the button text
+            resultButton.setTitle("Next", for: .normal)
             
             // Show the feedback screen
             dimView.alpha = 1
@@ -126,6 +132,28 @@ class ViewController: UIViewController {
         // Remove the answer buttons
         for view in answerStackView.arrangedSubviews {
             view.removeFromSuperview()
+        }
+        
+        // Check the text of the result button. If it is restart, restart the quiz.
+        let currentTitle = resultButton.title(for: .normal)
+        
+        // Check if there's a title
+        if let actualTitle = currentTitle {
+            if actualTitle == "Restart" {
+                
+                // Restart quiz
+                
+                // Set the current question to the first one
+                currentQuestion = questions[0]
+                displayCurrentQuestion()
+                
+                // Get rid of the result screen
+                dimView.alpha = 0
+                
+                // Reset score
+                numberCorrect = 0
+                return
+            }
         }
         
         // Determine what index the current question is within the questions array
@@ -150,7 +178,17 @@ class ViewController: UIViewController {
                 dimView.alpha = 0
                 
             }
-            
+            else {
+                // Quiz is over
+                
+                // Set the labels and buttons
+                resultLabel.text = "Results"
+                feedbackLabel.text = "Your score is \(numberCorrect) out of \(questions.count)!"
+                resultButton.setTitle("Restart", for: .normal)
+                
+                // Display the feedback screen
+                dimView.alpha = 1
+            }
         }
 
     }

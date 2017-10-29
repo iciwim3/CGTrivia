@@ -13,6 +13,6 @@ class Question: NSObject {
     var questionText = ""
     var answers = [String]()
     var correctAnswerIndex = 0
-    var category = ""
+    var feedback = ""
     
 }

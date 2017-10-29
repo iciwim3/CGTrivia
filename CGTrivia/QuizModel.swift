@@ -27,7 +27,7 @@ class QuizModel: NSObject {
             q.questionText = dict["question"] as! String
             q.answers = dict["answers"] as! [String]
             q.correctAnswerIndex = dict["correctAnswerIndex"] as! Int
-            q.category = dict["category"] as! String
+            q.feedback = dict["feedback"] as! String
             
             // Add the question object into the array
             questions += [q]
